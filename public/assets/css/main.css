@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'playB'; /*a name to be used later*/
+    src: url(/assets/fonts/Play-Bold.ttf); /*URL to font*/
+}
+@font-face {
+    font-family: 'playR'; /*a name to be used later*/
+    src: url(/assets/fonts/Play-Regular.ttf); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'cybeR'; /*a name to be used later*/
+    src: url(/assets/fonts/Cyberpunk-Regular.ttf); /*URL to font*/
+}
+
+.text-yellow{
+    color: #FBEF34;
+}
+.bg-yellow{
+    background: #FBEF34;
+}
+
+.o-cim{
+    font-size:25px;
+    font-family: "playB", serif;
+}
+
+body {
+    background-image: url('/assets/img/background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+    font-family: "playR", serif;
+}
+
+.container{
+    min-height: 100%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: yellow;
+    border: #FBEF34;
+    padding-bottom: 5px;
+    border-bottom: yellow;
+}
+
+.btn{
+    color: white;
+}
+
+.btn:hover{
+    background: yellow;
+    color: black;
+}
+
+.header{
+    padding: 0px;
+    background-image: url('/assets/img/navbar-bg-783ff525.png');
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box  ;
+    backface-visibility: visible;
+    background-repeat: no-repeat;
+    font-family: "playR", serif;
+    z-index: 1;
+}
+.footer{
+    background-image: url("/assets/img/footer-yellow.png") ;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    padding-top: 2%;
+
+}
+
+/*Szolgáltatások*/
+
+/* Kék és sárga színek a gombokhoz */
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #182939; /* Sötét kék háttér */
+    border: 1px solid #FBEF34; /* Sárga szegély */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Középre igazítja a szöveget */
+    padding: 15px; /* Kisebb belső margó a gombban */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #144679; /* Sötétebb kék, amikor kinyitva */
+    color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    color: #333;
+    padding-top: 10px;
+    text-align: center; /* Középre igazított szöveg */
+    padding-bottom: 15px; /* Kényelmesebb távolság az alján */
+    background-color: #f9f9f9;
+    margin-bottom: 15px; /* Szép távolság az egyes accordionok között */
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FBEF34; /* Sárga árak */
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 1.4rem;
+    font-family: "playR", serif;
+    color: #007bff; /* Kék szolgáltatás cím */
+    margin-bottom: 15px;
+}
+
+/* Extra padding az accordion gombok között */
+.accordion-item {
+    margin-bottom: 20px; /* Távolság az egyes accordionok között */
+}
+
+/* Kontaktok */
+
+/* Fontos üzenet és card dizájn */
+.contact-info-wrapper {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.icon-boxes {
+    margin-top: 40px;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Info-box */
+.d-flex {
+    align-items: center;
+}
+
+.text-dark {
+    color: #333;
+}
+
+.text-dark.opacity-75 {
+    opacity: 0.75;
+}
+
+.text-primary {
+    color: #FBEF34;
+}
+
+a.link-dark {
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .col-xl-6, .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
